@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 640" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#08070a"/>
+      <stop offset="45%" stop-color="#14110f"/>
+      <stop offset="100%" stop-color="#241d13"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f2e2b0"/>
+      <stop offset="55%" stop-color="#e8c988"/>
+      <stop offset="100%" stop-color="#e8c98800"/>
+    </radialGradient>
+    <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a86a00"/>
+      <stop offset="100%" stop-color="#0b0a08"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1712"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="640" fill="url(#sky)"/>
+
+  <circle cx="1300" cy="140" r="220" fill="url(#moon)" opacity="0.55"/>
+  <circle cx="1300" cy="140" r="70" fill="#f4e7bd"/>
+
+  <!-- distant mountains -->
+  <polygon points="0,420 150,300 320,400 480,280 650,410 820,320 1000,430 1180,300 1350,410 1600,340 1600,640 0,640" fill="#12100c" opacity="0.9"/>
+
+  <!-- ruined castle silhouette -->
+  <g fill="#050403">
+    <rect x="120" y="270" width="40" height="180"/>
+    <rect x="105" y="250" width="70" height="30"/>
+    <polygon points="105,250 120,225 140,250"/>
+    <polygon points="140,250 160,220 175,250"/>
+
+    <rect x="230" y="220" width="55" height="230"/>
+    <rect x="215" y="195" width="85" height="30"/>
+    <polygon points="215,195 235,150 255,195"/>
+    <polygon points="255,195 280,150 300,195"/>
+
+    <rect x="340" y="260" width="260" height="190"/>
+    <rect x="330" y="235" width="280" height="30"/>
+    <polygon points="330,235 355,180 380,235"/>
+    <polygon points="420,235 445,170 470,235"/>
+    <polygon points="520,235 545,180 570,235"/>
+
+    <rect x="660" y="300" width="45" height="150"/>
+    <rect x="648" y="280" width="70" height="25"/>
+    <polygon points="648,280 665,245 685,280"/>
+  </g>
+
+  <!-- broken bridge / spires -->
+  <g fill="#070604" opacity="0.9">
+    <rect x="760" y="360" width="18" height="90"/>
+    <rect x="800" y="340" width="18" height="110"/>
+    <rect x="840" y="375" width="18" height="75"/>
+  </g>
+
+  <rect x="0" y="380" width="1600" height="260" fill="url(#ground)"/>
+  <rect x="0" y="300" width="1600" height="150" fill="url(#fog)"/>
+
+  <!-- golden ember particles -->
+  <g fill="#e8c988" opacity="0.8">
+    <circle cx="420" cy="500" r="2.5"/>
+    <circle cx="700" cy="540" r="2"/>
+    <circle cx="980" cy="480" r="3"/>
+    <circle cx="1150" cy="560" r="2"/>
+    <circle cx="260" cy="560" r="2.5"/>
+    <circle cx="1400" cy="500" r="2"/>
+  </g>
+</svg>
